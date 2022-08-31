@@ -5,191 +5,228 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        h2 {
-            background-color: #ffc712;
-            color: #1c1819;
-            text-align: center;
-            font-size: 30px;
-            margin-top: -10px;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            margin: 5px
-        }
+    <!-- css link  -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- font awsome  -->
+    <link rel="stylesheet" href="./css/fontawesome-free-6.1.2-web/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- icon link  -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <!-- CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-        #banner {
-            width: 100%;
-        }
 
-        .items {
-            margin: 10px;
-        }
 
-        figcaption {
-            text-align: center;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            font-weight: bold;
-        }
 
-        /* table styling */
-        table {
-            background-color: #030303;
-            color: white;
-            text-align: center;
-            width: 20%;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            font-size: 15px;
-        }
-
-        th {
-            color: #25a64b;
-            font-size: 20px;
-        }
-
-        tr {
-            text-align: center;
-        }
-    </style>
+    <title>Dtecherz</title>
 </head>
 
 <body>
-    <!-- head and banner code start here -->
-    <h2>BROADWAY PIZZA</h2>
-    <img src="./img/banner.jpg" alt="" id="banner">
-    <!-- head and banner code end here -->
-
-    <!-- other iem code start here -->
-
-    <h2>OTHER ITEMS</h2>
-    <center>
-        <img src="./img/img1.jpg" alt="" class="items">
-        <img src="./img/img2.jpg" alt="" class="items">
-        <img src="./img/img3.jpg" alt="" class="items">
-        <img src="./img/img4.jpg" alt="" class="items">
-
-    </center>
-    <figure>
-        <figcaption>
-            Broadway Pizza is offering online ordering services in Pakistan. Order now get amazing discounts
-        </figcaption>
-    </figure>
-
-    <!-- menu code start here -->
-    <center>
-        <h2>MENU</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>PREMIUIM DEAL</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- deal 1 -->
-                <th>Deal 1</th>
-                <tr>
-                    <td> 1X 6 INCH </td>
-                </tr>
-                <tr>
-                    <td> FLATBREAD </td>
-                </tr>
-                <tr>
-                    <td> 1X HALF PORTION </td>
-                </tr>
-                <tr>
-                    <td> APPETIZER </td>
-                </tr>
-                <tr>
-                    <th>RS.319</th>
-
-                </tr>
+    <div class="main-container">
+        <div class="background"></div>
+        <header class="main-nav">
+            <nav>
+                <div class="left">
+                    <img src="./img/logo.png" alt="">
+                </div>
+                <div class="center">
+                    <ul>
+                        <li><a href="#"> Home </a></li>
+                        <li><a href="#"> Home </a></li>
+                        <li><a href="#"> Home </a></li>
+                        <li><a href="#"> Home </a></li>
+                        <li><a href="#"> Home </a></li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <div class="icon">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
 
 
-                <!-- deal 2 -->
+        <!-- mobile nav  -->
+        <div class="nav-show">
+            <div class="left">
+                <img src="./img/logo.png" alt="">
+            </div>
+            <div class="icon-show">
+                <span class="material-symbols-outlined" id="nav" onclick="OpenModal()">
+                    menu
+                </span>
+            </div>
+        </div>
 
-                <th>Deal 2</th>
-                <tr>
-                    <td> 1X 20 INCH SLICE </td>
-                </tr>
-                <tr>
-                    <td> APPETIZER </td>
-                </tr>
-                <tr>
-                    <td> 1X HALF PORTION </td>
-                </tr>
-                <tr>
-                    <td> 1X SMALL DRINK </td>
-                </tr>
-
-                <tr>
-                    <td> 1X SAUSE </td>
-                </tr>
-
-                <tr>
-                    <th>RS.499</th>
-                </tr>
+        <div class="main" id="Mob-Nav">
+            <div class="icon2" id="Mob_icon">
+                <span class="material-symbols-outlined" id="nav" onclick="CloseModal()">
+                    close
+                </span>
+            </div>
 
 
-                <!-- deal 3 -->
-                <th>Deal 3</th>
-                <tr>
-                    <td> 1X MIGHTY OVEN </td>
-                </tr>
-                <tr>
-                    <td> BAKED SANDWICH </td>
-                </tr>
-                <tr>
-                    <td> 1X POTATO </td>
-                </tr>
-                <tr>
-                    <td> WEDGES 90GM </td>
-                </tr>
-                <tr>
-                    <td> 1X SMALL DRINK </td>
-                </tr>
-                <tr>
-                    <th>RS.529</th>
-                </tr>
+            <div class="ul">
+                <ul>
+
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Testamonial</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+        <!-- end here  -->
+        <!-- slider start here  -->
+        <div class="main-slider" >
+            <div class="main-content">
+                <div class="heading-content" >
+                    <h1>Lorem ipsum dolor sit amet.
+                    </h1>
+                </div>
+                <div class="content-para">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+                <div class="content-btn">
+                    <button>Let's Talk</button>
+                </div>
+            </div>
+            <div class="main-imge">
+                <img src="./img/Asset 1.png" alt="">
+            </div>
+        </div>
+        <!-- container 1 start here  -->
+        <!-- <div class="main-cont1" data-aos="fade-down">
+            <div class="sub-head-cont1">
+                <h3>Hire world-class talent</h3>
+            </div>
+            <div class="main-head-cont1">
+                <h1>Creating a great product can be challenging – assembling your remote team isn’t.</h1>
+            </div>
+            <div class="cont1-para">
+                <p>Aspired goes beyond helping you hire remote resources – we enable and empower remote teams. Welcome
+                    to a leading tech-savvy remote agency that helps you build your remote team.</p>
+            </div>
+            <div class="flex-cont1">
+                <div class="sub-cont1">
+                    <div class="sub-head">
+                        <h2>Recruitment & Selection</h2>
+                    </div>
+                    <div class="sub-para">
+                        <p>Aspired's hi-tech platform delivers vetted top talent from around the world. You get your
+                            first candidate within just 5 days of your query.</p>
+                    </div>
+                </div>
+                <div class="sub-cont1">
+                    <div class="sub-head">
+                        <h2>Recruitment & Selection</h2>
+                    </div>
+                    <div class="sub-para">
+                        <p>Aspired's hi-tech platform delivers vetted top talent from around the world. You get your
+                            first candidate within just 5 days of your query.</p>
+                    </div>
+                </div>
+                <div class="sub-cont1">
+                    <div class="sub-head">
+                        <h2>Recruitment & Selection</h2>
+                    </div>
+                    <div class="sub-para">
+                        <p>Aspired's hi-tech platform delivers vetted top talent from around the world. You get your
+                            first candidate within just 5 days of your query.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cont1-btn"><button>Get Started</button></div>
+        </div>
+         -->
+         <!-- container 1  -->
+         <div class="main-cont1">
+            <div class="bg" data-aos="fade-down"></div>
+            <div class="main-cont1-heading" data-aos="flip-down">
+                <h1>What We Do</h1>
+            </div>
+            <div class="submain-main">
+            <a href="#" class="submain-a">
+            <div class="submain-cont" data-aos="zoom-in">
+                <div class="submain-icon">
+                  <img src="./img/smartphone.png" alt="smartphone">
+                </div>
+              
+                <div class="content-submain">
+                    <h4>App Development</h4>
+                </div>
+
+            </div>
+        </a>
+        <a href="#" class="submain-a">
+            <div class="submain-cont" data-aos="zoom-in">
+                <div class="submain-icon">
+                  <img src="./img/smartphone.png" alt="smartphone">
+                </div>
+              
+                <div class="content-submain">
+                    <h4>App Development</h4>
+                </div>
+
+            </div>
+        </a>
+        <a href="#" class="submain-a">
+            <div class="submain-cont" data-aos="zoom-in">
+                <div class="submain-icon">
+                  <img src="./img/smartphone.png" alt="smartphone">
+                </div>
+              
+                <div class="content-submain">
+                    <h4>App Development</h4>
+                </div>
+
+            </div>
+        </a>
+        <a href="#" class="submain-a">
+            <div class="submain-cont" data-aos="zoom-in">
+                <div class="submain-icon">
+                  <img src="./img/smartphone.png" alt="smartphone">
+                </div>
+              
+                <div class="content-submain">
+                    <h4>App Development</h4>
+                </div>
+
+            </div>
+        </a>
+    </div>
+         </div>
+        
+        <!-- main end  -->
+    </div>
 
 
 
 
 
-                <!-- deal 4 -->
-                <th>Deal 4</th>
-                <tr>
-                    <td> 1X TEN INCH MEDIUM </td>
-                </tr>
-                <tr>
-                    <td> 1X HALF PORTION </td>
-                </tr>
-                <tr>
-                    <td> APPETIZER </td>
-                </tr>
-                <tr>
-                    <td> SMALL DRINK </td>
-                </tr>
-                <tr>
-                    <td> 1X SAUSE </td>
-                </tr>
-                <tr>
-                    <th>RS.839</th>
-                </tr>
 
 
 
-            </tbody>
-
-
-
-
-
-        </table>
-    </center>
-
-
-
-
+    <script src="./js/index.js"></script>
+    <!-- JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
